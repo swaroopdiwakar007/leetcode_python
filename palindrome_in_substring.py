@@ -8,7 +8,7 @@ for i in range(len(s)):
         pal = s[l] + pal + s[r]
         l -= 1
         r += 1
-    # res = max(pal, res)
+    res = pal if len(pal) > len(res) else res
     # dict1[pal] = len(pal)
     l = i 
     r = i + 1
